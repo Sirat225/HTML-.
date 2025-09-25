@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 1 - Basic HTML Page</title>
+</head>
+<body>
+
+    
+    <h1>Welcome to My Assignment</h1>
+    <h2>This is a Subheading</h2>
+    <h3>Another Smaller Heading</h3>
+
+    
+    <p>This is a <b>bold</b> word, an <i>italic</i> word, and an <u>underlined</u> word.</p>
+    <p>Here is a line break:<br>After the break.</p>
+    <hr>
+
+    
+    <h2>My Favorite Fruits (Ordered List)</h2>
+    <ol>
+        <li>MANGO</li>
+        <li>APPLE</li>
+        <li>GRAPES</li>
+    </ol>
+
+    <h2>My Hobbies (Unordered List)</h2>
+    <ul>
+        <li>FOOTBALL</li>
+        <li>Coding</li>
+        <li>Gaming</li>
+    </ul>
+
+    
+    <h2>Links & Images</h2>
+    <p>Visit <a href="https://www.youtube.com/" target="_blank">YOUTUBE</a></p>
+    <img src="https://c02.purpledshub.com/uploads/sites/48/2020/12/caroline-herschels-266th-birthday-5149061126553600-hp2x-2743a26.gif?webp=1&w=1200" alt="Sample Image">
+
+  
+    <h2>Sample Table</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Name</th>
+            <th>Roll No</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>ALI</td>
+            <td>100</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>SARA</td>
+            <td>100</td>
+            <td>92</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    
+    <h2>Form with GET Method</h2>
+    <form action="get_form_handler.php" method="GET">
+        <label>Name: </label>
+        <input type="text" name="username"><br><br>
+
+        <label>Email: </label>
+        <input type="email" name="email"><br><br>
+
+        <label>Password: </label>
+        <input type="password" name="password"><br><br>
+
+        <label>Gender: </label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label>Hobbies: </label>
+        <input type="checkbox" name="hobby" value="reading"> Reading
+        <input type="checkbox" name="hobby" value="gaming"> Gaming
+        <input type="checkbox" name="hobby" value="sports"> Sports<br><br>
+
+        <label>Country: </label>
+        <select name="country">
+            <option value="pakistan">Pakistan</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit (GET)">
+    </form>
+
+    <hr>
+
+    <h2>Form with POST Method</h2>
+    <form action="post_form_handler.php" method="POST">
+        <label>Name: </label>
+        <input type="text" name="username"><br><br>
+
+        <label>Email: </label>
+        <input type="email" name="email"><br><br>
+
+        <label>Password: </label>
+        <input type="password" name="password"><br><br>
+
+        <label>Gender: </label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female<br><br>
+
+        <label>Hobbies: </label>
+        <input type="checkbox" name="hobby" value="reading"> Reading
+        <input type="checkbox" name="hobby" value="gaming"> Gaming
+        <input type="checkbox" name="hobby" value="sports"> Sports<br><br>
+
+        <label>Country: </label>
+        <select name="country">
+            <option value="pakistan">Pakistan</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit (POST)">
+    </form>
+
+</body>
+</html>
