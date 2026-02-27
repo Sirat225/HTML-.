@@ -1,12 +1,7 @@
-const mongoose = require("mongoose");
-const connectDB = async () => {
-    try {
-        await mongoose.connect("mongodb://127.0.0.1:27017/studentDB");
-        console.log("MongoDB Connected");
-    } catch (error) {
-        console.log("Database Error:", error);
-        process.exit(1);
-    }
+const mongoose = require('mongoose');
+const connectDB = () => {
+  return mongoose.connect('mongodb://127.0.0.1:27017/university')
+    .then(() => console.log("Connected to database successfully!"))
+    .catch(err => console.log("Connection failed:", err));
 };
-
 module.exports = connectDB;
